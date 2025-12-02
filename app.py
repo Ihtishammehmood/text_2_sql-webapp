@@ -41,7 +41,7 @@ db_tools = [list_tables, describe_table, execute_query]
 
 # Configure the Generative AI model with tools
 model = genai.GenerativeModel(
-    "models/gemini-1.5-flash-latest",
+    "models/gemini-flash-latest",
     tools=db_tools,
     system_instruction="""You are a helpful chatbot that can interact with an SQL database. You will take the users questions and turn them into SQL queries using the tools
 available. Once you have the information you need, you will answer the user's question using
